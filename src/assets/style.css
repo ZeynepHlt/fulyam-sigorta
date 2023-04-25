@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+html {
+  height: 100%;
+}
+body {
+  padding-top: 95px;
+  min-height: 100%;
+  line-height: 1.8;
+  color: #898fa1;
+  font-size: 15px;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+.title-sm {
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+.hr {
+  margin: 10px 0px;
+  border-bottom: 1px solid #ffffff75;
+  border-radius: 10px;
+}
+.hline {
+  width: 60px;
+  height: 2px;
+  background-color: #0034786c;
+  margin: 16px auto 0 auto;
+}
+.vline{
+  color: #fff;
+ font-size: 25px;
+
+}
+a {
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+img {
+  width: 100%;
+}
+small {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: #F5F6F7;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+.navbar .container .navbar-nav .nav-link, .navbar .container .navbar-nav .nav-link.dropdown-toggle{
+  color: #003478;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+.navbar .navbar-collapse .navbar-nav .active .nav-link{
+  color: #b30000;
+}
+.navbar .container .dropdown .dropdown-menu {
+  box-shadow: 0px 0px 5px rgba(99, 95, 95, 0.596);
+  border: none;
+  border-radius: 0;
+  background-color: #F5F6F7;
+  padding: 0;
+}
+.navbar .dropdown .dropdown-menu a {
+  font-weight:400;
+  color:#003478;
+  /* border-bottom: 1px solid #0000002f; */
+}
+.navbar .dropdown .dropdown-menu a:hover {
+  background-color: #00347849;
+}
+
+/* HOME */
+#home {
+  background: linear-gradient(rgba(0, 52, 120, 0.8), rgba(0, 52, 120, 0.8)),
+    url(@/assets/bg1.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+#home h1 {
+  font-weight: 700;
+}
+#home p {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 550px;
+  margin: auto;
+  letter-spacing: 1px;
+  font-family: "EB Garamond", serif;
+}
+#home .btn {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 0px;
+}
+#home .btn.btn-brand {
+  margin-top: 30px;
+  background-color: #a30000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+#home .btn.btn-brand:hover {
+  background-color: #6b0000;
+}
+
+/* SERVİCES */
+#services h3,h4{
+  color: #003478;
+}
+#services .section-intro {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#services .insurance {
+  font-weight: 400;
+  width: 250px;
+  height: auto;
+  text-align: center;
+  /* box-shadow: 0px 0px 30px black; */
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  margin: 0px auto;
+}
+#services .insurance img {
+  max-width: 250px;
+  max-height: 120px;
+}
+#services .insurance p{
+  padding: 0px 5px;
+}
+
+#services .btn {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px 28px;
+  border-radius: 0;
+}
+#services .btn.btn-brand {
+  background-color: #003478;
+  color: #fff;
+  letter-spacing: 1px;
+}
+#services .btn.btn-brand:hover {
+  background-color: #001b3d;
+}
+
+/* OFFER */
+#offer {
+  background-color: #bdbdbdb7;
+  padding: 20px 0px;
+  /* border-bottom: 1px solid #0034789a;
+  border-top: 1px solid #0034789a; */
+}
+#offer .offer-intro .fa {
+  text-align: center;
+  padding-right: 10px;
+  font-size: 22px;
+}
+#offer .offer-intro h6 {
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 1px 1px 5px rgba(121, 119, 119, 0.966);
+  font-weight: 600;
+}
+#offer .offer-intro .btn {
+  /* width: 200px; */
+  color: #fff;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px rgb(110, 105, 105);
+  background-color: #a30000;
+}
+#offer .offer-intro .btn:hover {
+  background-color: #6b0000;
+}
+#offer p {
+  font-weight: 600;
+}
+
+/* AGENCY */
+#agency h3,h4{
+  color: #003478;
+}
+#agency .agency-item {
+  margin: 0px 25px;
+}
+.agency-item:hover img {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer-top {
+ padding-top: 50px;
+  background-color: rgba(0, 52, 120, 0.8);
+  color: #fff;
+}
+.footer-top i {
+  padding-right: 5px;
+  font-size: 18px;
+}
+.footer-top a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-top a:hover{
+  text-decoration: none;
+  color: #010e20;
+}
+.footer-top h5 {
+  margin-bottom: 10px;
+}
+.footer-top .fa{
+  text-align: center;
+  padding-right: 10px;
+  font-size: 18px;
+
+}
+.footer-bottom .foot-img {
+  width: 210px;
+  height: auto;
+}
+.footer-bottom p{
+
+  padding-left: 150px;
+}
+/* KASKO,TRAFİK... */
+#offer-wrapper .sidebar{
+  margin: 0px auto;
+  padding: 30px 0px;
+  height:auto;
+  width:100%;
+  background-color: rgba(0, 52, 120, 0.8);
+  box-shadow: 0px 0px 20px black;
+ 
+}
+#offer-wrapper .nav-item .nav-link{
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 15px;
+ 
+}
+
+#offer-wrapper .nav-item .nav-link:hover{
+color: #001b3d;
+
+}
+
+#offer-wrapper {
+  font-size: 15px;
+  padding-top: 50px;
+  margin: 0;
+  /* background-color: rgba(0, 52, 120, 0.322); */
+}
+#offer-wrapper .offer-intro,.ins-intro {
+  padding: 20px;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 30px auto;
+  width: 90%;
+}
+
+#offer-wrapper .popover-wrapper{
+  position: relative;
+}
+#offer-wrapper .offer-intro .fa-i{
+  font-size: 20px;
+  color: #6b0000;
+  margin-left: 20px;
+  vertical-align: -0.215em;
+}
+#offer-wrapper .offer-intro .rs{
+  position: absolute;
+  top:15px;
+  left: 0px;
+  margin-top: 20px;
+  z-index: 1;
+}
+#offer-wrapper .offer-intro .as{
+  position: absolute;
+  top:15px;
+  left: 0px;;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+#offer-wrapper .offer-intro .popover img{
+  width: 400px;
+  height: auto;
+}
+/* .fa-i:hover .popover{
+ display: block;
+} */
+#offer-wrapper h4,h6 {
+  text-align: center;
+  padding-top: 20px;
+  color: #003478;
+}
+#offer-wrapper .offer-intro .form-label {
+  font-weight: bold;
+}
+#offer-wrapper .offer-intro .form-control {
+  padding: 5px 5px;
+  border: 1px solid #0034789d;
+}
+#offer-wrapper .offer-intro .form-control::placeholder {
+  font-size: 14px;
+}
+#offer-wrapper .offer-intro .form-check-input {
+ 
+  border: 1px solid #0034789d;
+}
+#offer-wrapper .offer-intro .form-check-label {
+  
+  margin: 4px 0px;
+  font-weight: bold;
+}
+#offer-wrapper .offer-intro .btn {
+  background-color: #a30000;
+}
+#offer-wrapper .offer-intro .btn:hover {
+  background-color: #6b0000;
+}
+
+#offer-wrapper .offer-intro .custom-select {
+
+ font-size: 14px;
+  border: 1px solid #0034789d;
+}
+#offer-wrapper .offer-intro .custom-select:first-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+#offer-wrapper .offer-intro .custom-select,
+option::selection {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #494747;
+}
+
+/* MobileApp */
+#mobile{
+  padding-top: 30px;
+}
+#mobile h4,.mobile-des{
+  margin-top: 10px;
+  font-weight: 600;
+  color: #003478;
+}
+#mobile .mobile-intro {
+  margin-top: 15px;
+  box-shadow: 0px 0px 20px black;
+}
+
+#mobile .mobile-intro img{
+  width: 200px;
+  height: auto;
+}
+/* servicesPage */
+#about{
+  padding-top: 30px;
+}
+#about h5,h4{
+  color: #003478;
+  padding-top: 10px;
+}
+
+#about .about-intro{
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 20px black;
+}
+
+/* anadolu,groupama,allianz */
+
+.ins-intro .card{
+  margin: 0px auto;
+}
+.ins-intro .card-title{
+  font-weight: 600;
+  color: #003478;
+}
+.ins-intro .card-link{
+  font-weight: 600;
+  color:#a30000;
+}
+.policy-des{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.input-err{
+  border: 2px solid  rgba(107, 0, 0, 0.575) !important;
+}
+.text-err{
+  color: #6b0000;
+}
